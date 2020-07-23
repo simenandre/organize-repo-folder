@@ -18,7 +18,8 @@ jobs:
       -
         name: Set up Go
         uses: actions/setup-go@v2
-      - uses: izumin5210/action-homebrew@releases/v0
+      - 
+        uses: izumin5210/action-homebrew@releases/v0
         with:
           tap: cobraz/homebrew-tools
           token: ${{ secrets.GITHUB_TOKEN }}
