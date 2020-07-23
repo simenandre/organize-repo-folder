@@ -1,0 +1,25 @@
+name: goreleaser
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  goreleaser:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        name: Unshallow
+        run: git fetch --prune --unshallow
+      -
+        name: Set up Go
+        uses: actions/setup-go@v2
+      - uses: izumin5210/action-homebrew@releases/v0
+        with:
+          tap: cobraz/homebrew-tools
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tap-token: ${{ secrets.TAP_GITHUB_TOKEN }}
