@@ -1,6 +1,6 @@
 # Organize Repo Folder
 
-This utility is written in Go and features a simple script to brutally organize your local repositories according to this opinionated structure:
+This utility is written in Go and features a simple script to organize your local repositories according to this opinionated structure (brutally):
 
 ```shell
 Repos
@@ -20,15 +20,14 @@ Repos
     └── gifski
 ```
 
-In the example above, `bjerkio`, `cobraz` and `sindresorhus` are organizations or github users.
-The scripts gets this from the git source (ex. `git@github.com:*cobraz*/organize-repo-folder.git`).Please note, we are lowercasing both the organization name and repository name. Repositories that either have no origin source, have a non-standard github path or maybe having issues being parsed by Git, will be kept in a backup directory.
+In the example above, `bjerkio`, `cobraz` and `sindresorhus` are organizations or GitHub users. The scripts get this from the git source (ex. `git@github.com:*cobraz*/organize-repo-folder.git`). Please note, we are lowercasing both the organization name and repository name. Repositories that either has no origin source have a non-standard GitHub path or maybe having issues are parsed by Git, will be kept in a backup directory.
 
 ## Warning
 
-This command line utility is very bare-bone. You should make sure that you have backup of everything. Remember that probably all your repositories will get a new location, so – that
+This command-line utility is very bare-bone. You should make sure that you have a backup of everything. Remember that probably all your repositories will get a new location, so – that
 could cause problems for running applications and editors. You probably want to close them before running any of this.
 
-Also, as we are creating a `(name of your repository-folder)-bak` of your old folder and consequently moving all your repositories over to a new folder. You could risk losing stuff if the `-bak` folder is there before running.
+Also, as we are creating a `(name of your repository-folder)-bak` of your old folder and consequently moving all your repositories over to a new folder, you could risk losing stuff if the `-bak` folder is there before running.
 
 Lastly, we do not confirm anything. Once you run the command – here be dragons!
 
