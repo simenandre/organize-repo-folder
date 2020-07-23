@@ -32,6 +32,14 @@ Also, as we are creating a `(name of your repository-folder)-bak` of your old fo
 
 Lastly, we do not confirm anything. Once you run the command – here be dragons!
 
+## Install
+
+```shell
+brew install cobraz/tools/organize-repo-folder
+```
+
+**Notes**: The library is not tested on Linux or Windows. There are [executables available](https://github.com/cobraz/organize-repo-folder/releases/latest) at every release >1.0.3
+
 ## Help
 
 ```shell
