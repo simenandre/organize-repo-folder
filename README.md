@@ -58,6 +58,10 @@ GLOBAL OPTIONS:
    --help, -h    show help (default: false)
 ```
 
+## Other projects
+
+I personally love [ghq](https://github.com/x-motemen/ghq). I recommend it!
+
 ## Contribute
 
 Please, oh pretty please do contribute! If you feel this helps you out, but you want to increase the quality of this software, please submit pull requests. Look at our issues page for more information – as previously stated, it's pretty bare-bone. Making it faster, better is something everyone wants.
